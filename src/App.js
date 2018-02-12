@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import Firebase from 'firebase';
 import reducers from './reducers';
+import { Button, Card, CardSection } from './components/common';
 
 class App extends Component {
 
@@ -26,10 +27,11 @@ class App extends Component {
     render() {
         return (
             <Provider store={createStore(reducers)}>
-                <View>
-                    <Text>Primeira tela do Hire Me</Text>
-                    <Text>Lorem ipslum</Text>
-                </View>
+                <Card>
+                    <CardSection>
+                        <Button>Login</Button>
+                    </CardSection>
+                </Card>
             </Provider>
         );
     }
