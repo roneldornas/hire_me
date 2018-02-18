@@ -12,19 +12,19 @@ const Card = (props) => {
 const styles = {
   containerStyle: {
     backgroundColor: '#fff',
-    borderWidth: 1,
-    borderRadius: 2,
-    borderColor: '#ddd',
-    borderBottomWidth: 0,
+    borderTopWidth: 1,
+    borderBottomWidth: 1,
+    borderTopColor: '#eee',
+    borderBottomColor: '#eee',
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
     elevation: 1,
-    marginLeft: 5,
-    marginRight: 5,
     marginTop: 10,
     marginBottom: 10,
+    paddingRight: 5,
+    paddingLeft: 5,
     flex: 1
   }
 };

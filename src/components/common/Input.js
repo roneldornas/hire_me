@@ -21,16 +21,18 @@ const Input = ({ label, value, onChangeText, placeholder, secureTextEntry }) => 
 
 const styles = {
   inputStyle: {
+    fontFamily: 'titillium_web_bold',
     color: '#000',
-    paddingRight: 5,
+    paddingRight: 10,
     paddingLeft: 5,
     fontSize: 18,
     lineHeight: 23,
-    flex: 2
+    flex: 2.5
   },
   labelStyle: {
     fontSize: 18,
-    paddingLeft: 20,
+    paddingLeft: 5,
+    color: '#009688',
     flex: 1
   },
   containerStyle: {

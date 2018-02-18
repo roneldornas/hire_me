@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import {
-    View,
-    Text
-} from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import Firebase from 'firebase';
 import reducers from './reducers';
-import { Button, Card, CardSection } from './components/common';
+import Loginform from './components/LoginForm';
 
 class App extends Component {
 
@@ -27,11 +23,7 @@ class App extends Component {
     render() {
         return (
             <Provider store={createStore(reducers)}>
-                <Card>
-                    <CardSection>
-                        <Button>Login</Button>
-                    </CardSection>
-                </Card>
+                <Loginform />
             </Provider>
         );
     }

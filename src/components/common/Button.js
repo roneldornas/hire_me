@@ -16,11 +16,11 @@ const Button = ({ onPress, children }) => {
 const styles = {
     textStyle: {
         alignSelf: 'center',
-        color: '#c4b907',
-        fontSize: 16,
-        fontWeight: '600',
+        color: '#009688',
+        fontSize: 18,
         paddingTop: 10,
-        paddingBottom: 10
+        paddingBottom: 10,
+        fontFamily: 'titillium_web_black'
     },
     buttonStyle: {
         flex: 1,
@@ -28,7 +28,7 @@ const styles = {
         backgroundColor: '#fff',
         borderRadius: 5,
         borderWidth: 1,
-        borderColor: '#c4b907',
+        borderColor: '#009688',
         marginLeft: 5,
         marginRight: 5
     }
