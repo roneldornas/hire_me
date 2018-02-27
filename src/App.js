@@ -9,7 +9,7 @@ import Loginform from './components/LoginForm';
 class App extends Component {
 
     componentWillMount() {
-         // Initialize Firebase
+        // Initialize Firebase
         const config = {
             apiKey: 'AIzaSyAkBXrijQSUAl0zV1Vw9TxUI8wWc2Z2VEI',
             authDomain: 'hire-me-6c68a.firebaseapp.com',

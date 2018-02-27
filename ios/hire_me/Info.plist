@@ -66,6 +66,9 @@
 		<string>TitilliumWeb-Regular.ttf</string>
 		<string>TitilliumWeb-SemiBold.ttf</string>
 		<string>TitilliumWeb-SemiBoldItalic.ttf</string>
+		<string>titillium_web_black.ttf</string>
+		<string>titillium_web_bold.ttf</string>
+		<string>titillium_web_light.ttf</string>
 	</array>
 </dict>
 </plist>

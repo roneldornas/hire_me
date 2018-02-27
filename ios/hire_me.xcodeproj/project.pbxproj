@@ -49,6 +49,10 @@
 		5080AB925AD54E19802C8107 /* TitilliumWeb-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CD013964DF442DA9D5EF400 /* TitilliumWeb-Regular.ttf */; };
 		3BA6543716E74E54BD253AAF /* TitilliumWeb-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6E66AC91EC7F4E7B9C83C29A /* TitilliumWeb-SemiBold.ttf */; };
 		343B6F2AC8024AECB7A88902 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96C2A974C82840D2B17983C5 /* TitilliumWeb-SemiBoldItalic.ttf */; };
+		D1889D3253B04AB49743524C /* libRNSpinkit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 611AD4D2DF8A4B11982D12F5 /* libRNSpinkit.a */; };
+		98E931654F68436E80BEA670 /* titillium_web_black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 377C3D837316476E8C2025BC /* titillium_web_black.ttf */; };
+		EB07D708D1244A17AC8A779F /* titillium_web_bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 25517CC2B0474D4BAAB31082 /* titillium_web_bold.ttf */; };
+		882C6EE996CA42579600CE6C /* titillium_web_light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 859EA7D2E4F2492EB12CCF95 /* titillium_web_light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +315,11 @@
 		9CD013964DF442DA9D5EF400 /* TitilliumWeb-Regular.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-Regular.ttf"; path = "../assets/fonts/TitilliumWeb-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		6E66AC91EC7F4E7B9C83C29A /* TitilliumWeb-SemiBold.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-SemiBold.ttf"; path = "../assets/fonts/TitilliumWeb-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		96C2A974C82840D2B17983C5 /* TitilliumWeb-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "TitilliumWeb-SemiBoldItalic.ttf"; path = "../assets/fonts/TitilliumWeb-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99ECCA3E4A5B421FAFA3BF04 /* RNSpinkit.xcodeproj */ = {isa = PBXFileReference; name = "RNSpinkit.xcodeproj"; path = "../node_modules/react-native-spinkit/ios/RNSpinkit.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		611AD4D2DF8A4B11982D12F5 /* libRNSpinkit.a */ = {isa = PBXFileReference; name = "libRNSpinkit.a"; path = "libRNSpinkit.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		377C3D837316476E8C2025BC /* titillium_web_black.ttf */ = {isa = PBXFileReference; name = "titillium_web_black.ttf"; path = "../assets/fonts/titillium_web_black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		25517CC2B0474D4BAAB31082 /* titillium_web_bold.ttf */ = {isa = PBXFileReference; name = "titillium_web_bold.ttf"; path = "../assets/fonts/titillium_web_bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		859EA7D2E4F2492EB12CCF95 /* titillium_web_light.ttf */ = {isa = PBXFileReference; name = "titillium_web_light.ttf"; path = "../assets/fonts/titillium_web_light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -339,6 +348,7 @@
 				832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */,
 				00C302EA1ABCBA2D00DB3ED1 /* libRCTVibration.a in Frameworks */,
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
+				D1889D3253B04AB49743524C /* libRNSpinkit.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +526,7 @@
 				832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */,
 				00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */,
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
+				99ECCA3E4A5B421FAFA3BF04 /* RNSpinkit.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -580,6 +591,9 @@
 				9CD013964DF442DA9D5EF400 /* TitilliumWeb-Regular.ttf */,
 				6E66AC91EC7F4E7B9C83C29A /* TitilliumWeb-SemiBold.ttf */,
 				96C2A974C82840D2B17983C5 /* TitilliumWeb-SemiBoldItalic.ttf */,
+				377C3D837316476E8C2025BC /* titillium_web_black.ttf */,
+				25517CC2B0474D4BAAB31082 /* titillium_web_bold.ttf */,
+				859EA7D2E4F2492EB12CCF95 /* titillium_web_light.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -988,6 +1002,9 @@
 				5080AB925AD54E19802C8107 /* TitilliumWeb-Regular.ttf in Resources */,
 				3BA6543716E74E54BD253AAF /* TitilliumWeb-SemiBold.ttf in Resources */,
 				343B6F2AC8024AECB7A88902 /* TitilliumWeb-SemiBoldItalic.ttf in Resources */,
+				98E931654F68436E80BEA670 /* titillium_web_black.ttf in Resources */,
+				EB07D708D1244A17AC8A779F /* titillium_web_bold.ttf in Resources */,
+				882C6EE996CA42579600CE6C /* titillium_web_light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1119,6 +1136,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hire_me.app/hire_me";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1136,6 +1161,14 @@
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hire_me.app/hire_me";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1154,6 +1187,10 @@
 				);
 				PRODUCT_NAME = hire_me;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1171,6 +1208,10 @@
 				);
 				PRODUCT_NAME = hire_me;
 				VERSIONING_SYSTEM = "apple-generic";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1197,6 +1238,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Debug;
 		};
@@ -1223,6 +1272,14 @@
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)\..\node_modules\react-native-spinkit\ios/**",
+				);
 			};
 			name = Release;
 		};
@@ -1244,6 +1301,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hire_me-tvOS.app/hire_me-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1265,6 +1326,10 @@
 				SDKROOT = appletvos;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hire_me-tvOS.app/hire_me-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
+				);
 			};
 			name = Release;
 		};

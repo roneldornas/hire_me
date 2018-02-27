@@ -20,7 +20,7 @@ const styles = {
         fontSize: 18,
         paddingTop: 10,
         paddingBottom: 10,
-        fontFamily: 'titillium_web_black'
+        fontFamily: 'titillium_web_bold'
     },
     buttonStyle: {
         flex: 1,
