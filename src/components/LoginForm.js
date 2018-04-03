@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import Spinner from 'react-native-spinkit';
 import { Card, CardSection, Input, Button } from './common';
@@ -51,14 +51,20 @@ class LoginForm extends Component {
 
         return (
             <View>
-                <CardSection style={{ marginTop: 45 }}>
-                    <Button onPress={this.onPressButton.bind(this)}>
+                <CardSection
+                style={{ marginTop: 45 }}
+                >
+                    <Button
+                    onPress={this.onPressButton.bind(this)}
+                    >
                         Entrar
                     </Button>
                 </CardSection>
 
                 <CardSection>
-                    <Text style={styles.textStyle}>
+                    <Text
+                    style={styles.textStyle}
+                    >
                         OU
                     </Text>
                 </CardSection>
@@ -68,6 +74,16 @@ class LoginForm extends Component {
                         Criar uma Conta
                     </Button>
                 </CardSection>
+
+                <CardSection>
+                    <TouchableOpacity
+                    style={styles.forgotTextStyle}
+                    >
+                        <Text>
+                            Esqueci minha senha
+                        </Text>
+                    </TouchableOpacity>
+                </CardSection>
             </View>
         );
     }
@@ -75,7 +91,9 @@ class LoginForm extends Component {
     render() {
         return (
             <Card>
-                <CardSection style={{ marginTop: 60 }}>
+                <CardSection
+                style={{ marginTop: 60 }}
+                >
                     <Input 
                     label='E-mail'
                     placeholder='exemplo@dominio.com.br'
@@ -115,14 +133,19 @@ const styles = {
     errorTextStyle: {
         color: '#f90202',
         alignSelf: 'center',
-        fontSize: 22,
-        fontFamily: 'titillium_web_black',
+        fontSize: 18,
+        fontFamily: 'titillium_web_bold',
         height: 100,
         marginTop: 8
     },
     spinnerStyle: {
         marginTop: 48,
         alignSelf: 'center'
+    },
+    forgotTextStyle: {
+        marginTop: 20,
+        flex: 1,
+        alignItems: 'center',
     }
 };
 
