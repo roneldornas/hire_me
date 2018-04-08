@@ -1,21 +1,23 @@
 import Firebase from 'firebase';
+import { Actions } from 'react-native-router-flux';
 import { 
-    EMAIL_CHANGED,
-    PASSWORD_CHANGED,
-    LOGIN_USER_SUCCESS,
-    LOGIN_USER_FAIL,
-    LOGIN_USER
- } from './types';
+  EMAIL_CHANGED,
+  PASSWORD_CHANGED,
+  LOGIN_USER_SUCCESS,
+  LOGIN_USER_FAIL,
+  LOGIN_USER,
+  FORGOT_PASSWORD
+} from '../types';
 
  /**
   * Concatena string do email do usuário.
   * @param {string} => string 
   */
 export const emailChanged = (text) => {
-    return {
-        type: EMAIL_CHANGED,
-        payload: text
-    };
+  return {
+    type: EMAIL_CHANGED,
+    payload: text
+	};
 };
 
 /**
@@ -23,10 +25,10 @@ export const emailChanged = (text) => {
  * @param {string} => string
  */
 export const passwordChanged = (text) => {
-    return {
-        type: PASSWORD_CHANGED,
-        payload: text
-    };
+  return {
+    type: PASSWORD_CHANGED,
+    payload: text
+  };
 };
 
 /**
@@ -35,13 +37,23 @@ export const passwordChanged = (text) => {
  * @param {string, string} => user 
  */
 export const loginUser = ({ email, password }) => {
-    return (dispatch) => {
-        dispatch({ type: LOGIN_USER });
-        Firebase.auth().signInWithEmailAndPassword(email, password)
-            .then(user => loginUserSuccess(dispatch, user))
-            .catch(() => loginUserFail(dispatch));
-    };
+  return (dispatch) => {
+    dispatch({ type: LOGIN_USER });
+    Firebase.auth().signInWithEmailAndPassword(email, password)
+			.then(user => loginUserSuccess(dispatch, user))
+      .catch(() => loginUserFail(dispatch));
+    Actions.availableJobs();
+	};
 };
+
+/**
+ * 
+ * @param {void} 
+ */
+export const forgotPassword = (dispatch) => {
+  dispatch({ type: FORGOT_PASSWORD });
+};
+
 
 /**
  * Chama o reducer em caso de falha ao logar
@@ -57,8 +69,8 @@ const loginUserFail = (dispatch) => {
  * @param {*} user 
  */
 const loginUserSuccess = (dispatch, user) => {
-    dispatch({
-      type: LOGIN_USER_SUCCESS,
-      payload: user
+  dispatch({
+  type: LOGIN_USER_SUCCESS,
+	payload: user
     });
 };
