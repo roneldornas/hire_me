@@ -50,8 +50,10 @@ export const loginUser = ({ email, password }) => {
  * 
  * @param {void} 
  */
-export const forgotPassword = (dispatch) => {
-  dispatch({ type: FORGOT_PASSWORD });
+export const forgotPassword = () => {
+  return (dispatch) => {
+    Actions.forgotPassword(dispatch);
+  };
 };
 
 

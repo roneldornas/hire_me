@@ -2,13 +2,14 @@ import React, { Component } from 'react';
 import { Text, View, TouchableOpacity } from 'react-native';
 import { connect } from 'react-redux';
 import Spinner from 'react-native-spinkit';
+import { Actions } from 'react-native-router-flux';
 import { Card, CardSection, Input, Button } from '../common';
 import { 
 	emailChanged,
   passwordChanged,
   loginUser,
   forgotPassword
-} from '../../actions';
+} from '../../actions/auth';
 
 class LoginForm extends Component {
 
@@ -83,7 +84,7 @@ class LoginForm extends Component {
         <CardSection>
 					<TouchableOpacity
             style={styles.forgotTextStyle}
-            onPress={() => { this.forgotPassword.bind(this); }}
+            onPress={() => { this.forgotPassword(); }}
 					>
 					<Text>
             Esqueci minha senha

@@ -11,30 +11,34 @@ import AvailableJobs from './components/jobs/AvailableJobs';
 const RouterComponent = () => {
   return (
     <Router>
-      <Stack key="auth">
-        <Scene
-          key="login"
-          component={LoginForm}
-          title="Login"
-          initial
-          titleStyle={styles.titleStyle}
-          navigationBarStyle={styles.barStyle}
-        />
-        <Scene 
-          key="forgotPassword"
-          component={ForgotPassword}
-          title="Esqueci minha senha"
-          titleStyle={styles.titleStyle}
-        />
-      </Stack>
-      <Stack key="main">
-        <Scene 
-          key="availableJobs"
-          component={AvailableJobs}
-          title="Vagas disponíveis"
-          titleStyle={styles.titleStyle}
-        />
-      </Stack>
+      <Scene key="root" hideNavBar>
+        <Stack key="auth">
+          <Scene
+            key="login"
+            component={LoginForm}
+            title="Login"
+            initial
+            titleStyle={styles.titleStyle}
+            navigationBarStyle={styles.barStyle}
+          />
+          <Scene 
+            key="forgotPassword"
+            component={ForgotPassword}
+            title="Recuperar senha"
+            titleStyle={styles.titleStyle}
+            navigationBarStyle={styles.barStyle}
+            navBarButtonColor='#ffffff'
+          />
+        </Stack>
+        <Stack key="main">
+          <Scene 
+            key="availableJobs"
+            component={AvailableJobs}
+            title="Vagas disponíveis"
+            titleStyle={styles.titleStyle}
+          />
+        </Stack>
+     </Scene>
     </Router>
     );
 };
